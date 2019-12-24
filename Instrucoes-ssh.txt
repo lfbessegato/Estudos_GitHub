@@ -1,0 +1,10 @@
+# Para criar a chave 
+ssh-keygen -f ~/.ssh/luciano_rsa
+
+# Para copiar a chave e salvar na conta do GitHub
+cat ~/.ssh/luciano_rsa.pub
+
+# Antes de realizar o clone
+eval $(ssh-agent)
+ssh-add ~/.ssh/luciano_rsa
+
